@@ -1,4 +1,4 @@
-If the query string filled, the api delivers the products based on the given category
+If the query string is filled, the api delivers the products based on the given category
 
 otherwise (If the request does not include the query string for categoryName)
 The api delivers all of the products
