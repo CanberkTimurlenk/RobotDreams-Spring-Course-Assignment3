@@ -27,7 +27,7 @@ public class ProductService {
         else
             // write a query to fetch products by category from the db
             query = jdbcTemplate.query("SELECT * FROM Products WHERE Category = ?"
-                    , new Object[]{categoryName}, new ProductMapper());
+                    , new Object[]{categoryName.get()}, new ProductMapper());
 
 
         return query;
